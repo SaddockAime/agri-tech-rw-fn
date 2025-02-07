@@ -1,7 +1,7 @@
 /* eslint-disable */
 import axios from "axios";
 import { getToken } from "../protectRoute/ProtectedRoute";
-export const URL = "https://agri-tech-rw-bn-001.onrender.com";
+export const URL = "http://localhost:4040";
 const axiosInstance = axios.create({
   baseURL: `${URL}`,
   headers: {
