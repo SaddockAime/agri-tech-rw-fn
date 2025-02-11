@@ -157,7 +157,7 @@ const Header: React.FC = () => {
       <div className="header__bottom">
         <div className="header__bottom__top">
           <div className="header__menu">
-            <div
+            {/* <div
               className="header__dropdown__container"
               onClick={handleSetIsOpen}
             >
@@ -180,7 +180,7 @@ const Header: React.FC = () => {
                   ))}
                 </ul>
               </div>
-            )}
+            )} */}
           </div>
           <SearchInput className="header__input" />
           <div className="icons">

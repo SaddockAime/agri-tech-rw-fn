@@ -4,22 +4,22 @@ import { useAppDispatch, useAppSelector } from "../store/store";
 import { fetchProducts } from "../store/features/product/productSlice";
 import Product from "../components/product/Product";
 import Sample from "../components/layout/Sample";
-import { PuffLoader } from "react-spinners";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 import { Meta } from "../components/Meta";
 import { toast } from "react-toastify";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { createCart, getUserCarts } from "../store/features/carts/cartSlice";
-import { resetAuth } from "../store/features/auth/authSlice";
-
 
 const LandingPage: React.FC = () => {
   const dispatch = useAppDispatch();
-  const navigate = useNavigate()
-  const [cartResponseData, setCartResponseData] = useState<any>(null)
+  const navigate = useNavigate();
+  const [cartResponseData, setCartResponseData] = useState<any>(null);
   const { products, isError, isSuccess, isLoading, message } = useAppSelector(
     (state: any) => state.products
   );
   const [visibleProducts, setVisibleProducts] = useState<number>(20);
+
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
@@ -47,6 +47,7 @@ const LandingPage: React.FC = () => {
       }
     }
   };
+
   useEffect(() => {
     const checkProductToCartPending = async () => {
       const pendingProduct = localStorage.getItem("pendingCartProduct");
@@ -73,8 +74,13 @@ const LandingPage: React.FC = () => {
       <Sample />
       <div className="landing-container">
         {isLoading ? (
-          <div className="loader">
-            <PuffLoader color="#ff6d18" size={300} loading={isLoading} />
+          <div className="product-list">
+            {Array.from({ length: 24 }).map((_, index) => (
+              <div key={index} className="product-card">
+                <Skeleton height={200} />
+                <Skeleton count={8} />
+              </div>
+            ))}
           </div>
         ) : isError ? (
           <div className="error-message">
@@ -89,23 +95,25 @@ const LandingPage: React.FC = () => {
               {isSuccess &&
                 Array.isArray(products) &&
                 products
-                .slice(0,visibleProducts)
-                .map((product: any) => (
-                  <Product
-                    key={product.id}
-                    id={product.id}
-                    images={product.images}
-                    name={product.name}
-                    price={product.price}
-                    stock={Number(product.quantity)}
-                    description={product.description}
-                    discount={Number(product.discount.replace("%", ""))}
-                  />
-                ))}
+                  .slice(0, visibleProducts)
+                  .map((product: any) => (
+                    <Product
+                      key={product.id}
+                      id={product.id}
+                      images={product.images}
+                      name={product.name}
+                      price={product.price}
+                      stock={Number(product.quantity)}
+                      description={product.description}
+                      discount={Number(product.discount.replace("%", ""))}
+                    />
+                  ))}
             </div>
-            {visibleProducts < products.length && ( <div className="load-more">
-              <button onClick={handleLoadMore}>Load More</button>
-            </div>)}
+            {visibleProducts < products.length && (
+              <div className="load-more">
+                <button onClick={handleLoadMore}>Load More</button>
+              </div>
+            )}
           </div>
         )}
       </div>

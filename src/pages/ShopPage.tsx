@@ -4,7 +4,9 @@ import { useAppDispatch, useAppSelector } from '../store/store';
 import { fetchAllShops } from '../store/features/product/shopSlice';
 import { Meta } from "../components/Meta";
 import ShopCard from '../components/product/ShopCard';
-import { PuffLoader } from 'react-spinners';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import '../assets/styles/ShopPage.scss';
 
 const ShopPage: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -19,9 +21,12 @@ const ShopPage: React.FC = () => {
       <Meta title="Shops - E-Commerce Ninjas" />
       <div className="shop-container">
         {isLoadingShops ? (
-          <div className="loader">
-            <PuffLoader color="#ff6d18" size={300} loading={isLoadingShops} />
-          </div>
+          Array.from({ length: 6 }).map((_, index) => (
+            <div key={index} className="shop-card">
+              <Skeleton height={200} />
+              <Skeleton count={3} />
+            </div>
+          ))
         ) : isErrorShops ? (
           <p>Something went wrong. Please try again later.</p>
         ) : isSuccessShops && shops && shops.length > 0 ? (

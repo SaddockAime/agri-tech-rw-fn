@@ -10,7 +10,7 @@ interface HomePageProps {
 const HomePage: React.FC<HomePageProps> = ({ isAuthenticated, userRole }) => {
   return (
     <div>
-      {!isAuthenticated && (
+      {/* {!isAuthenticated && (
         <div className="banner">
           <h2>Interested in selling?</h2>
           <p>Create an account to become a seller and start selling your products online!</p>
@@ -23,7 +23,7 @@ const HomePage: React.FC<HomePageProps> = ({ isAuthenticated, userRole }) => {
           <p>Upgrade your profile to become a seller and start listing your products!</p>
           <Link to="/become-seller" className="btn-link">Upgrade to Seller</Link>
         </div>
-      )}
+      )} */}
       {/* Other homepage content */}
     </div>
   );

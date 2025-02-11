@@ -183,7 +183,7 @@
         .profile-image {
           border-radius: 50%;
           height: 6rem;
-          border: 0.2rem solid #FF6D18;
+          border: 0.2rem solid #518B05;
           width: 6rem;
           object-fit: cover;
           margin-bottom: 1rem;
@@ -276,7 +276,7 @@
           border-radius: 2rem;
           margin-top: 1rem;
           background-color: #d9d9d9;
-          color: #FF6D18;
+          color: #518B05;
         }
       }
     }
@@ -345,7 +345,7 @@
             border-radius: 50%;
 
             &.completed {
-              background-color: #ff7300;
+              background-color: #518B05;
             }
 
             &.cancelled {
@@ -362,7 +362,7 @@
 
         .monthDropDown {
           .dropdown-button {
-            background-color: #ff7300;
+            background-color: #518B05;
             color: #fff;
             border: none;
             padding: 5px 10px;

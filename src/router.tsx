@@ -36,6 +36,7 @@ import { AboutUs } from "./pages/AboutUs";
 import { SellerRegistrationPage } from "./pages/seller/SellerRegistrationPage";
 import ShopPage from './pages/ShopPage';
 import ProductsByShopPage from './pages/ProductsByShopPage';
+import ContactUsPage from "./pages/ContactUsPage";
 
 import { Settings } from "./pages/admin/Settings";
 const AppRouter: React.FC = () => {
@@ -66,6 +67,7 @@ const AppRouter: React.FC = () => {
             }
           />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/contact-us" element={<ContactUsPage />} />
           <Route path="/shops" element={<ShopPage />} />
           <Route path="/shops/:shopId/products" element={<ProductsByShopPage />} />
           <Route
