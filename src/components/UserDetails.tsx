@@ -6,7 +6,7 @@ import { IRequest } from "../utils/types/store";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { acceptOrRejectRequest, deleteUserRequest } from "../store/features/admin/adminSlice";
 import { FcApproval } from "react-icons/fc";
-import rejected from "../../public/assets/images/rejected.png";
+import rejected from "../assets/images/rejected.png";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 import { useNavigate } from "react-router-dom";

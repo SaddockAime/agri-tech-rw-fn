@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { useLocation, useNavigate } from "react-router-dom";
-import noresults from "../../public/assets/images/noResult.png";
+import noresults from "../assets/images/noResult.png";
 import Product from "../components/product/Product";
 import { searchProduct } from "../store/features/product/productSlice";
 import { PuffLoader } from "react-spinners";

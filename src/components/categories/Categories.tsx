@@ -1,9 +1,9 @@
 /* eslint-disable */
 import React from "react";
-import leftButton from '../../../public/assets/left-bottom.png';
-import middle from '../../../public/assets/middle.png';
-import rightButton from '../../../public/assets/right-bottom.png';
-import rightTop from '../../../public/assets/right-top.png';
+import leftButton from '../../assets/left-bottom.png';
+import middle from '../../assets/middle.png';
+import rightButton from '../../assets/right-bottom.png';
+import rightTop from '../../assets/right-top.png';
 function Categories() {
   return (
     <div className="categories__container">

@@ -139,7 +139,7 @@ const UserVIewOrders: React.FC = () => {
 
   return (
     <>
-      <Meta title="View Order history - E-Commerce Ninjas" />
+      <Meta title="View Order history - AgriConnect Rwanda" />
 
       {isPreloader && (
         <div className="table__spinner">

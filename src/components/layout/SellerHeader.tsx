@@ -7,7 +7,7 @@ import { useAppSelector, useAppDispatch } from "../../store/store";
 import Notifications from './notification';
 import { fetchNotifications } from '../../store/features/notifications/notificationSlice';
 import useSocket from '../../hooks/useSocket';
-import logo from "../../../public/assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 
 function SellerHeader() {
   const dispatch = useAppDispatch();
@@ -38,7 +38,7 @@ function SellerHeader() {
           className="header__logo__img"
         />
         <p className="header__logo__text">
-          e-Commerce <span>Ninjas</span>
+        agri-Connect <span>Rwanda</span>
         </p>
       </div>
       {isAuthenticated && (

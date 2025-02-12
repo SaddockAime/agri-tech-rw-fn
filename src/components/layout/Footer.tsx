@@ -173,7 +173,7 @@ function Footer() {
           </li>
         </ul>
         <p className="footer__copyright">
-          &copy; E-commerce Ninjas {new Date().getFullYear()}. All rights
+          &copy; AgriConnect Rwanda {new Date().getFullYear()}. All rights
           reserved
         </p>
       </div>

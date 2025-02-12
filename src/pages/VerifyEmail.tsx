@@ -5,8 +5,8 @@ import { Meta } from "../components/Meta";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { resetAuth, verifyEmail } from "../store/features/auth/authSlice";
 import { DotLoader } from "react-spinners";
-import email from "../../public/assets/images/email.png"
-import failed from "../../public/assets/images/failed.png";
+import email from "../assets/images/email.png"
+import failed from "../assets/images/failed.png";
 const VerifyEmail: React.FC = () => {
     const { token } = useParams<{ token: string }>() as any;
     const navigate = useNavigate();
@@ -21,7 +21,7 @@ const VerifyEmail: React.FC = () => {
 
     return (
         <>
-            <Meta title="verify email - E-Commerce Ninjas" />
+            <Meta title="verify email - AgriConnect Rwanda" />
             <div className="wrapper">
                 <div className="container">
                     <div className="verify-email-page">

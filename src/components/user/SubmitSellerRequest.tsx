@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useEffect } from 'react';
-import seller from "../../../public/assets/sellerI.png"
+import seller from "../../assets/sellerI.png"
 import { Link } from 'react-router-dom';
 
 const SubmitSellerRequest= () => {

@@ -18,7 +18,7 @@ const ShopPage: React.FC = () => {
 
   return (
     <>
-      <Meta title="Shops - E-Commerce Ninjas" />
+      <Meta title="Shops - AgriConnect Rwanda" />
       <div className="shop-container">
         {isLoadingShops ? (
           Array.from({ length: 6 }).map((_, index) => (

@@ -101,7 +101,7 @@ const ProductsPage: React.FC = () => {
 
   return (
     <>
-      <Meta title="Products - E-Commerce Ninjas" />
+      <Meta title="Products - AgriConnect Rwanda" />
       <div className="landing-container">
         {isLoading ? (
           <div className="loader">

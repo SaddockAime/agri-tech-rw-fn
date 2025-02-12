@@ -124,7 +124,7 @@
   .product-list {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr));
     gap: 1.7rem;
   }
 
@@ -133,7 +133,7 @@
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
-    width: 26rem;
+    width: 36rem;
   }
 
   .product-card .react-loading-skeleton {

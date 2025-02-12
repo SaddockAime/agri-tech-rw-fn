@@ -70,7 +70,7 @@ const LandingPage: React.FC = () => {
 
   return (
     <>
-      <Meta title="Home - E-Commerce Ninjas" />
+      <Meta title="Home - AgriConnect Rwanda" />
       <Sample />
       <div className="landing-container">
         {isLoading ? (

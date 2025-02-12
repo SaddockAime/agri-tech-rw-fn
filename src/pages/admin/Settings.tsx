@@ -20,7 +20,7 @@ export const Settings = () => {
     };
     return (
         <>
-            <Meta title='Settings - E-commerceNinjas' />
+            <Meta title='Settings - AgriConnect Rwanda' />
             <div className="settings">
                 <h2>Settings</h2>
                 <Menu selectedSection={selectedSection} onSelectSection={setSelectedSection} />

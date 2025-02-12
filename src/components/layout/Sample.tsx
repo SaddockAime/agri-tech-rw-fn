@@ -6,18 +6,18 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
-import leftTop from "../../../public/assets/images/left-top.png";
-import rightTop from "../../../public/assets/images/right-top.png";
-import leftBottom from "../../../public/assets/images/left-bottom.png";
-import rightBottom from "../../../public/assets/images/right-bottom.png";
+import leftTop from "../../assets/images/choose-fresh.png";
+import rightTop from "../../assets/images/choose-5.png";
+import leftBottom from "../../assets/images/choose-3.png";
+import rightBottom from "../../assets/images/choose-6.png";
 const images = [
-  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1724663918/middle_pmpcqw.png',
-  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1724663915/add-cart-buy-now-online-commerce-graphic-concept_mvuvex.jpg',
-  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1724663912/happy-man-with-handbags-dancing-after-shopping-spree_kieiwn.jpg',
-  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1724663909/laptop-shopping-bags-online-shopping-concept_pytoky.jpg',
-  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1724663908/cropped-image-woman-inputting-card-information-key-phone-laptop-while-shopping-online_l7ioph.jpg',
-  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1724663906/1293_b6kg3u.jpg',
-  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1724663890/cyber-monday-shopping-sales_d1gjm6.jpg',
+  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1739296312/pexels-adonyi-foto-1414651_cxszn0.jpg',
+  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1739296313/pexels-nc-farm-bureau-mark-2478405_ylbtjf.jpg',
+  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1739296313/pexels-nc-farm-bureau-mark-2893635_ydrnbh.jpg',
+  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1739296312/pexels-enginakyurt-10899599_m4k3pz.jpg',
+  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1739296312/pexels-enginakyurt-10899480_eq391j.jpg',
+  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1739296312/pexels-enginakyurt-15428957_qcaz4t.jpg',
+  'https://res.cloudinary.com/djrmfg6k9/image/upload/v1739296312/pexels-enginakyurt-15428958_sciaou.jpg',
 ];
 
 const Sample: React.FC = () => {
@@ -60,17 +60,17 @@ const Sample: React.FC = () => {
         <div className="sample1">
           <div className="menShoe">
             <img src={rightTop} alt="" />
-            <div className="text-container">
+            {/* <div className="text-container">
               <p>women's Shoes</p>
               <button>View &gt;</button>
-            </div>
+            </div> */}
           </div>
           <div className="phones">
             <img src={leftBottom} alt="" />
-            <div className="text-container">
+            {/* <div className="text-container">
               <p>Phones</p>
               <button>View &gt;</button>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="sample2">
@@ -95,17 +95,17 @@ const Sample: React.FC = () => {
         <div className="sample3">
           <div className="womenShoe">
             <img src={leftTop} alt="" />
-            <div className="text-container">
+            {/* <div className="text-container">
               <p>Men's Shoes</p>
               <button>View &gt;</button>
-            </div>
+            </div> */}
           </div>
           <div className="accessories">
             <img src={rightBottom} alt="" />
-            <div className="text-container">
+            {/* <div className="text-container">
               <p>Accessories</p>
               <button>View &gt;</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

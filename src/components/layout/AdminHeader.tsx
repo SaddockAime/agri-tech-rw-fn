@@ -1,7 +1,7 @@
 /* eslint-disable*/
 import React, { useEffect, useState } from "react";
 import { IoIosNotifications } from "react-icons/io";
-import logo from "../../../public/assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 import { getUserDetails } from '../../store/features/auth/authSlice';
 import { useAppDispatch, useAppSelector } from '../../store/store';
 import Notifications from './notification';
@@ -39,7 +39,7 @@ const unreadCount = notifications
           className="header__logo__img"
         />
         <p className="header__logo__text">
-          e-Commerce <span>Ninjas</span>
+         agri-Connect <span>Rwanda</span>
         </p>
       </div>
       <div className="header__notifications__box">

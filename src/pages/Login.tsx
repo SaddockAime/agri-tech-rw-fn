@@ -160,7 +160,7 @@ function Login() {
             Simplify your e-commerce account with our user-friendly website.
           </p>
           <img
-            src="../assets/images/loginPhoto.png"
+            src="https://res.cloudinary.com/djrmfg6k9/image/upload/v1739387365/loginPhoto_wubzg3.png"
             alt="login picture"
             className="login__img"
           />
@@ -240,7 +240,7 @@ function Login() {
             <p className="login__social__text">Login with google</p>
           </div>
           <p className="login__register">
-            New to e-commerce Ninjas?
+            New to AgriConnect Rwanda?
             <Link to="/signup" className="login__link">
               Register
             </Link>
