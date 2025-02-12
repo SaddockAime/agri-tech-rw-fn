@@ -17,7 +17,7 @@ import { getUserDetails } from "../../store/features/auth/authSlice";
 import { useAppDispatch, useAppSelector } from "../../store/store";
 import { IUser } from "../../utils/types/store";
 import { IoLogoWechat } from "react-icons/io5";
-import notification from "../../../public/assets/notification.mp3";
+import notification from "../../assets/notification.mp3";
 import { uploadImage } from "../../store/features/chat/chatSlice";
 import { Box, CircularProgress } from "@mui/material";
 import { GrZoomIn } from "react-icons/gr";
@@ -399,7 +399,7 @@ const LiveChat = () => {
       ) : (
         <div className={`live-chat ${isMinimized ? "minimized" : ""}`}>
           <div className="chat-header">
-            <p>Live Chat | E-commerce Ninjas</p>
+            <p>Live Chat | AgriConnect Rwanda</p>
             <div className="chat-controls">
               {isMinimized ? (
                 <SendTooltip title="Maximize" TransitionComponent={Zoom}>

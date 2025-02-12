@@ -1,63 +1,303 @@
 .services-container {
-  .image-container {
+  .hero-section {
     width: 100vw;
-    height: 33rem;
-    color: $white;
-    background-image: url(https://res.cloudinary.com/djrmfg6k9/image/upload/v1723647815/Rectangle_168_ztbooe.png);
+    height: 40rem;
+    background-image: url('https://res.cloudinary.com/djrmfg6k9/image/upload/v1739379590/pexels-pixabay-2592804443_fmmya7.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    .service-header {
+    background-position: center;
+    color: $white;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+      font-size: 4.8rem;
       color: $primary-color;
-      font-size: 4rem;
-      padding: 5rem;
+      margin-bottom: 2rem;
     }
+
     p {
-      font-size: 2.5rem;
-      padding: 1rem 5rem;
+      font-size: 2.4rem;
     }
   }
-  .services-cards {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
-    gap: 3rem;
-    padding: 2rem;
-    .cards {
-      display: block;
-      width: 30rem;
-      text-align: left !important;
-      padding: 4rem;
-      margin: 3rem;
-      border-radius: 2rem;
-      border: 3px solid $third-color;
-      transition: all 0.3s ease;
 
-      &:hover {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        border-color: $primary-color;
-        transform: translateY(-10px);
-      }
-      .icon {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $primary-color;
-        width: 9rem;
-        height: 9rem;
-        border-radius: 50%;
-        color: $black;
-        img {
-          z-index: 100;
+  section {
+    padding: 8rem 4rem;
+    
+    h2 {
+      font-size: 3.6rem;
+      color: $primary-color;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+  }
+
+  .marketplace-section {
+    background-color: $secondary-color-2;
+    border: 2px solid $border-color;
+    
+    .marketplace-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      gap: 4rem;
+      max-width: 120rem;
+      margin: 0 auto;
+
+      .marketplace-card {
+        padding: 3rem;
+        
+        h3 {
+          font-size: 2.4rem;
+          color: $primary-color;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: 1.8rem;
+          color: $text-color;
+          line-height: 1.6;
         }
       }
-      .card-header {
-        font-size: 2.5rem;
-        margin: 2rem 0;
-        color: $black;
+    }
+  }
+
+  .market-insights {
+    background-color: $secondary-color-2;
+    padding: 8rem 4rem;
+  
+    h2 {
+      font-size: 3.6rem;
+      color: $primary-color;
+      margin-bottom: 4rem;
+      text-align: center;
+      font-family: $text-family;
+    }
+  
+    .insights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      gap: 4rem;
+      max-width: 120rem;
+      margin: 0 auto;
+  
+      .insight-card {
+        text-align: center;
+        padding: 3rem;
+  
+        .icon {
+          width: 9rem;
+          height: 9rem;
+          background-color: transparent;
+          margin: 0 auto 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+  
+          svg {
+            width: 5rem;
+            height: 5rem;
+            color: $primary-color;
+          }
+        }
+  
+        h3 {
+          font-size: 2.2rem;
+          color: $text-color;
+          margin-bottom: 1.5rem;
+        }
+  
+        p {
+          font-size: 1.6rem;
+          color: $text-color;
+          line-height: 1.6;
+          max-width: 40rem;
+          margin: 0 auto;
+        }
       }
-      p {
-        font-size: 1.9rem;
-        color: $secondary-color;
+    }
+  }
+
+  .payments-section {
+    background-color: $secondary-color-2;
+    border: 2px solid $border-color;
+
+    .payments-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      gap: 4rem;
+      max-width: 120rem;
+      margin: 0 auto;
+
+      .payment-card {
+        padding: 3rem;
+        position: relative;
+        display: flex;
+
+        .number {
+          width: 4rem;
+          height: 4rem;
+          background-color: $primary-color;
+          border-radius: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          color: $white;
+          margin-bottom: 2rem;
+          margin-right: 2rem;
+        }
+
+        h3 {
+          font-size: 2.2rem;
+          color: $primary-color;
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          color: $text-color;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .logistics-section {
+    background-color: $secondary-color-2;
+    padding: 4rem 2rem;
+    
+    h2 {
+      font-size: 3.6rem;
+      color: $primary-color;
+      margin-bottom: 4rem;
+      text-align: center;
+      font-family: $text-family;
+    }
+  
+    .logistics-timeline {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      max-width: 120rem;
+      margin: 0 auto;
+      position: relative;
+  
+      .timeline-item {
+        position: relative;
+        padding: 2rem 4rem;
+        
+        
+  
+        &:nth-child(1) {
+          background-color: $secondary-color-2;
+        }
+  
+        &:nth-child(2) {
+          background-color: $secondary-color-2;
+        }
+  
+        .step {
+          font-size: 2.8rem;
+          color: $text-color;
+          margin-bottom: 1.5rem;
+          font-weight: bold;
+        }
+  
+        h3 {
+          font-size: 2.2rem;
+          color: $text-color;
+          margin-bottom: 1.5rem;
+        }
+  
+        p {
+          font-size: 1.6rem;
+          color: $text-color;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .communication-section {
+    background-color: $secondary-color-2;
+    padding: 8rem 4rem;
+    border: 2px solid $border-color;
+  
+    h2 {
+      font-size: 3.6rem;
+      font-family: $text-family;
+      color: $primary-color;
+      margin-bottom: 4rem;
+      text-align: center;
+    }
+  
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 4rem;
+      max-width: 120rem;
+      margin: 0 auto;
+  
+      .tool-card {
+        background-color: #fff;
+        padding: 3rem;
+        border-radius: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+  
+        h3 {
+          font-size: 2.2rem;
+          color: #333;
+          margin-bottom: 1.5rem;
+        }
+  
+        p {
+          font-size: 1.6rem;
+          color: #666;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .training-section {
+    background-color: $secondary-color-2;
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      gap: 4rem;
+      max-width: 120rem;
+      margin: 0 auto;
+      align-items: center;
+
+      .training-content {
+        .training-header {
+          font-size: 3.6rem;
+          color: $primary-color;
+          margin-bottom: 4rem;
+        }
+        h3 {
+          font-size: 2.2rem;
+          color: $text-dark;
+          margin-bottom: 1.5rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          color: $text-light;
+          margin-bottom: 3rem;
+          line-height: 1.6;
+        }
+      }
+
+      .training-image {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 1rem;
+        }
       }
     }
   }

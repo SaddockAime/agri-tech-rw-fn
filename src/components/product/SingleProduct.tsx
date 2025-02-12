@@ -10,7 +10,7 @@ import { IProductInitialResponse } from "../../utils/types/store";
 import { Meta } from "../Meta";
 import { Link } from "react-router-dom";
 import {truncateString} from "../../utils/text/truncateString";
-import UserDefaultImage from "../../../public/assets/images/user.png";
+import UserDefaultImage from "../../assets/images/user.png";
 import ImageSlider from "../images/ImageSlider";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";

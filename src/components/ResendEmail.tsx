@@ -36,7 +36,7 @@ export const ResendEmail = () => {
   }, [dispatch,isEmailSuccess,isEmailResend,message]);
   return (
     <>
-      <Meta title="Resend Email - E-Commerce Ninjas" />
+      <Meta title="Resend Email - AgriConnect Rwanda" />
       <div className="wrapper">
         <div className="container">
           {

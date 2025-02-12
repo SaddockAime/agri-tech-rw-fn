@@ -19,7 +19,7 @@ function Sidebar() {
     <div className="sidebar">
       <div className="sidebar__content">
         <p className="sidebar__title">
-          e-Commerce<span>Ninjas</span>
+        agri-Connect <span>Rwanda</span>
         </p>
         <ul className="sidebar__content__list sidebar__list">
           <li className="sidebar__item">

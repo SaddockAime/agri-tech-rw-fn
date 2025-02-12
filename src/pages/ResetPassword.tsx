@@ -7,7 +7,7 @@ import { useAppDispatch, useAppSelector } from "../store/store";
 import { PulseLoader } from "react-spinners";
 import { resetAuth, resetPassword } from "../store/features/auth/authSlice";
 import { useFormik } from "formik";
-import passwordChanged from "../../public/assets/images/resetPassword.png";
+import passwordChanged from "../assets/images/resetPassword.png";
 import { toast } from "react-toastify";
 
 const ResetPassword: React.FC = () => {

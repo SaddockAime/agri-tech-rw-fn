@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { Meta } from '../components/Meta'
 import { useNavigate } from 'react-router-dom';
-import newMessage from "../../public/assets/images/new-message.png"
+import newMessage from "../assets/images/new-message.png"
 import { useAppSelector } from '../store/store'
 export const EmailVerifying = () => {
     const navigate = useNavigate();
@@ -14,7 +14,7 @@ export const EmailVerifying = () => {
     },[navigate])
     return (
         <>
-            <Meta title='Email Verifying - E-Commerce Ninjas' />
+            <Meta title='Email Verifying - AgriConnect Rwanda' />
             <div className='wrapper'>
                 <div className="container">
                     <div className="email-spot">

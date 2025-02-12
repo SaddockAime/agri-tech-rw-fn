@@ -10,7 +10,7 @@ import Button from "../components/buttons/Button";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { registerUser, resetAuth } from "../store/features/auth/authSlice";
 import { HashLoader } from "react-spinners";
-import SignUpIcon from "../../public/assets/images/sign-up.png";
+import SignUpIcon from "../assets/images/sign-up.png";
 import { toast } from "react-toastify";
 import authService from "../store/features/auth/authService";
 
@@ -83,14 +83,14 @@ export const SignUp = () => {
 
   return (
     <>
-      <Meta title="Sign up - E-Commerce Ninjas" />
+      <Meta title="Sign up - AgriConnect Rwanda" />
       <div className="wrapper">
         <div className="container">
           <div className="login-form">
             <form onSubmit={formik.handleSubmit} className="signup">
               <div className="left-side-login">
                 <div className="left-side-text">
-                  <h1>Create e-commerceNinjas account.</h1>
+                  <h1>Create Agri-Connect account.</h1>
                   <p>
                     Simplify your e-commerce account with our user-friendly
                     website.

@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import notFound from '../../public/assets/images/not-found.png';
+import notFound from '../assets/images/not-found.png';
 
 const NotFound: React.FC<any> = ({redirectPath='/'}) => {
 

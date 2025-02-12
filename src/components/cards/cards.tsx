@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from 'react';
 import PropTypes from 'prop-types';
-import greenLines from "../../../public/assets/images/greenLines.png"
-import redLines from "../../../public/assets/images/redLines.png"
+import greenLines from "../../assets/images/greenLines.png"
+import redLines from "../../assets/images/redLines.png"
 const Card = ({ title, value, percentage, isPositive, onClick }) => {
     return (
       <div className="card" onClick={onClick ? onClick : undefined}>

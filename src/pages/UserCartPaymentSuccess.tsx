@@ -33,7 +33,7 @@ const UserCartPaymentSuccess: React.FC = () => {
 
   return (
     <>
-      <Meta title="Cart payment success - E-Commerce Ninjas" />
+      <Meta title="Cart payment success - AgriConnect Rwanda" />
       <div className="loader">
         <PuffLoader color="#ff6d18" size={300} loading={isLoading} />
       </div>

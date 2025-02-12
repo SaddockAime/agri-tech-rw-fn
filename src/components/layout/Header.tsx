@@ -23,7 +23,7 @@ import {
   getUserDetails,
 } from "../../store/features/auth/authSlice";
 import { useLocation, Link } from "react-router-dom";
-import logo from "../../../public/assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 import useSocket from "../../hooks/useSocket";
 import { toast } from "react-toastify";
 import { PulseLoader } from "react-spinners";
@@ -131,7 +131,7 @@ const Header: React.FC = () => {
         <Link className="header__logo" to="/">
           <img src={logo} alt="Ecommerce logo" className="header__logo__img" />
           <p className="header__logo__text">
-            e-Commerce <span>Ninjas</span>
+          agri-Connect <span>Rwanda</span>
           </p>
         </Link>
         <div className="header__content">
@@ -323,7 +323,6 @@ const Header: React.FC = () => {
           <div className="header__nav" ref={navEl}>
             <nav>
               <ul className="header__list">
-                {isAuthenticated && (
                   <li className="nav__item" onClick={handleSetIsMenuOpen}>
                     <NavLink
                       to="/home"
@@ -332,7 +331,6 @@ const Header: React.FC = () => {
                       Home
                     </NavLink>
                   </li>
-                )}
                 <li className="nav__item" onClick={handleSetIsMenuOpen}>
                   <NavLink
                     to="/shops"

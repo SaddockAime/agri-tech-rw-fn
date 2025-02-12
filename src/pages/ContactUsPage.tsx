@@ -44,7 +44,7 @@ const ContactUsPage: React.FC = () => {
 
     return (
         <div className="page-wrapper">
-            <Meta title="Contact Us - E-Commerce Ninjas" />
+            <Meta title="Contact Us - AgriConnect Rwanda" />
             <div className="contact-us-container">
                 <div className="form-container">
                     <h1>Contact Us</h1>

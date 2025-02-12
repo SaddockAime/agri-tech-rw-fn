@@ -4,9 +4,9 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { useAppDispatch } from '../../store/store';
 import { updateUserProfile, fetchUserProfile } from '../../store/features/user/userSlice';
-import avatar from "../../../public/assets/avatar.jpg";
-import camera from "../../../public/assets/Camera.png";
-import Rwanda from "../../../public/assets/Rwanda_.png"
+import avatar from "../../assets/avatar.jpg";
+import camera from "../../assets/Camera.png";
+import Rwanda from "../../assets/Rwanda_.png"
 import { TailSpin } from 'react-loader-spinner';
 import { toast } from "react-toastify";
 import { changingProfile } from '../../store/features/auth/authSlice';

@@ -19,7 +19,7 @@ body {
   font-family: "Averia Serif Libre", serif;
   font-weight: 400;
   line-height: 1;
-  color: $text-color;
+  color: #112a46;
 }
 
 .container {
@@ -40,14 +40,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: $primary-color-light;
+  background-color: #ffe2d1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $primary-color;
+  background-color: #518B05;
   border-radius: 10rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: $primary-color;
+  background-color: #518B05;
 }

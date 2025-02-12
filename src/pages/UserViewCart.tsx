@@ -368,7 +368,7 @@ const UserViewCart: React.FC = () => {
 
   return (
     <>
-      <Meta title="View shopping cart - E-Commerce Ninjas" />
+      <Meta title="View shopping cart - AgriConnect Rwanda" />
       {isPreloader && (
         <div className="table__spinner">
           <Box sx={{ width: "100%" }}>
