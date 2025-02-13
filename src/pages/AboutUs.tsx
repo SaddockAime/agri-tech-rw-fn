@@ -3,26 +3,18 @@ import React from "react";
 import { Meta } from "../components/Meta";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { ShoppingBasket, Package, Utensils } from "lucide-react";
-import { Sprout, Store, Truck, Users, CheckCircle } from "lucide-react";
+import { Sprout, Store, Truck, Users, CheckCircle, Leaf } from "lucide-react";
 import Marquee from "react-fast-marquee";
 
 export const AboutUs = () => {
   const teamMembers = [
     {
-      name: "Aime Patrick",
+      name: "Mpuhwezimana Jean Gabriel",
       image:
-        "https://res.cloudinary.com/dqugc36zh/image/upload/v1724652456/xrpxq1tvvzi4hza3ewjh.jpg",
+        "https://res.cloudinary.com/djrmfg6k9/image/upload/v1739474694/WhatsApp_Image_2025-02-13_at_9.24.19_PM_mqkpb9.jpg",
       position: "Full Stack Developer",
-      linkedIn: "www.linkedin.com/in/aime-patrick-393ba5226",
-      github: "https://github.com/Aime-Patrick",
-    },
-    {
-      name: "Mr David",
-      image:
-        "https://res.cloudinary.com/dlhivvi0h/image/upload/v1723652835/david/david-profile.jpg",
-      position: "Full Stack Developer",
-      linkedIn: "https://www.linkedin.com/in/programmerdatch/",
-      github: `https://github.com/ProgrammerDATCH`,
+      linkedIn: "https://www.linkedin.com/in",
+      github: `https://github.com/`,
     },
     {
       name: "Saddock Kabandana",
@@ -31,52 +23,27 @@ export const AboutUs = () => {
       position: "Full Stack Developer",
       linkedIn: "https://www.linkedin.com/in/saddock-kabandana-89b914237/",
       github: "https://github.com/SaddockAime",
-    },
-    {
-      name: "Ishimwe Jean Baptiste",
-      image: "https://i.ibb.co/ZNq8hhb/hb.jpg",
-      position: "Full Stack Developer",
-      linkedIn: "https://www.linkedin.com/in/hbapte",
-      github: "https://github.com/hbapte",
-    },
-    {
-      name: "Ndahimana Bonheur",
-      image:
-        "https://res.cloudinary.com/dpu6ljn5c/image/upload/v1723665699/white_passport_ku69ot.jpg",
-      position: "Junior Software Developer",
-      linkedIn: "https://www.linkedin.com/in/ndahimana154/",
-      github: "https://github.com/ndahimana154",
-    },
-    {
-      name: "Niyonshuti Jean De Dieu",
-      image:
-        "https://res.cloudinary.com/dqugc36zh/image/upload/v1724653199/mkbxyo83gsbsm40dzpnc.jpg",
-      position: "Full Stack Developer",
-      linkedIn: "https://www.linkedin.com/in/ndahimana154/",
-      github: "https://github.com/ndahimana154",
-    },
+    }
   ];
 
   const steps = [
     {
-      icon: <Sprout size={48} color="#ffffff" />,
-      title: "FOR FARMERS",
-      description:
-        "A simple way to list and sell produce, access market prices, and connect with verified buyers.",
+      icon: <Leaf size={48} color="#2E7D32" />,
+      title: "For Farmers",
+      description: "List and sell produce, access market prices, connect with buyers.",
     },
     {
-      icon: <Store size={48} color="#ffffff" />,
-      title: "FOR WHOLESALERS",
-      description:
-        "A convenient platform to source fresh produce directly from farmers at competitive prices.",
+      icon: <Store size={48} color="#2E7D32" />,
+      title: "For Wholesalers",
+      description: "Source fresh produce directly from farmers at competitive prices.",
     },
     {
-      icon: <Truck size={48} color="#ffffff" />,
-      title: "FOR TRANSPORTERS",
-      description:
-        "A space to offer logistics services and facilitate smooth deliveries.",
+      icon: <Truck size={48} color="#2E7D32" />,
+      title: "For Transporters",
+      description: "Offer logistics services and facilitate smooth deliveries.",
     },
   ];
+
 
   const stats = [
     { number: "1000+", label: "Farmers Connected", icon: <Users /> },
@@ -112,27 +79,50 @@ export const AboutUs = () => {
             ))}
           </section> */}
           <section className="mission">
-            <h2>Our Mission</h2>
-            <div className="paragraph">
-              <p>
-                We aim to create a seamless and efficient agricultural
-                marketplace that ensures fair prices, reduces post-harvest
-                losses, and strengthens Rwanda’s food supply chain.
-              </p>
-            </div>
-          </section>
-          <section className="offers">
-            <h2>What We Offer</h2>
-            <div className="offers__steps">
-              {steps.map((step, index) => (
-                <div key={index} className="offers__step">
-                  <div className="offers__step-icon">{step.icon}</div>
-                  <h3>{step.title}</h3>
-                  <p>{step.description}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+  <h2>Our Mission</h2>
+  <div className="mission-grid">
+    <div className="mission-item">
+      <span className="number">1</span>
+      <div className="content">
+        <h3>Seamless Marketplace</h3>
+        <p>Create an efficient agricultural marketplace.</p>
+      </div>
+    </div>
+    <div className="mission-item">
+      <span className="number">2</span>
+      <div className="content">
+        <h3>Fair Prices</h3>
+        <p>Ensure fair prices for farmers.</p>
+      </div>
+    </div>
+    <div className="mission-item">
+      <span className="number">3</span>
+      <div className="content">
+        <h3>Reduce Losses</h3>
+        <p>Reduce post-harvest losses.</p>
+      </div>
+    </div>
+    <div className="mission-item">
+      <span className="number">4</span>
+      <div className="content">
+        <h3>Strengthen Supply Chain</h3>
+        <p>Strengthen Rwanda's food supply chain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="offers">
+    <h2>What We Offer</h2>
+    <div className="offers__steps">
+      {steps.map((step, index) => (
+        <div key={index} className="offers__step">
+          <div className="offers__step-icon">{step.icon}</div>
+          <h3>{step.title}</h3>
+          <p>{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
           <section className="works">
             <h2>How It Works</h2>
             <div className="works__list">
@@ -173,32 +163,34 @@ export const AboutUs = () => {
               </p>
             </div>
           </section>
-          {/* <section className="team">
-            <h2>Meet the Team</h2>
-            <div className="team__members">
-              {teamMembers.map((member, index) => (
-                <div key={index} className="team__member">
-                  <img src={member.image} alt={member.name} />
-                  <div className="team__member__desc">
-                    <h3>{member.name}</h3>
-                    <p>{member.position}</p>
-                    <div className="team__member__desc__icon">
-                      {member.linkedIn && (
-                        <a href={member.linkedIn} target="_blank">
-                          <FaLinkedin />
-                        </a>
-                      )}
-                      {member.github && (
-                        <a href={member.github} target="_blank">
-                          <FaGithub />
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section> */}
+          <section className="team">
+  <h2>Meet the Team</h2>
+  <div className="team__members">
+    {teamMembers.map((member, index) => (
+      <div key={index} className="team__member">
+        <img src={member.image} alt={member.name} />
+        {/* <div className="team__member__desc">
+          <div className="team__member__desc__icon">
+            {member.linkedIn && (
+              <a href={member.linkedIn} target="_blank">
+                <FaLinkedin />
+              </a>
+            )}
+            {member.github && (
+              <a href={member.github} target="_blank">
+                <FaGithub />
+              </a>
+            )}
+          </div>
+        </div> */}
+        <div className="team__member__info">
+          <h3>{member.name}</h3>
+          <p>{member.position}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
           {/* <section className="get-in-touch">
             <div className="in-touch">
               <button>Get In Touch</button>

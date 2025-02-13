@@ -102,15 +102,15 @@ function Footer() {
                     Room 14 Second floor
                   </address>
                   <span className="footer__text">Phone:</span>
-                  <a href="tel:+250783456766" className="footer__link">
-                    +250783456766
+                  <a href="tel:+250788938717" className="footer__link">
+                    +250788938717
                   </a>
                   <span className="footer__text">Email:</span>
                   <a
-                    href="mailto:ecommerceninjas45@gmail.com"
+                    href="mailto:agriconnect001@gmail.com"
                     className="footer__link"
                   >
-                    ecommerceninjas45@gmail.com
+                    agriconnect001@gmail.com
                   </a>
                 </li>
               </ul>
