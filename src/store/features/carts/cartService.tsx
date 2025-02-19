@@ -66,7 +66,7 @@ const createStripeProduct = async (data) => {
       name: data.name,
       'images[0]': data.image1,
       'images[1]': data.image2,
-      url: 'https://e-commerce-ninja-fn-staging.netlify.app',
+      url: 'http://localhost:5000',
       description: data.description,
       default_price_data: {
         unit_amount: data.unit_amount,

@@ -2,7 +2,7 @@
 import { io } from 'socket.io-client';
 import { getToken } from '../protectRoute/ProtectedRoute';
 
-const socket = io('https://agri-tech-rw-bn-001.onrender.com');
+const socket = io('http://localhost:5001');
 
 export const joinRoom = () => {
   const token = getToken();

@@ -87,7 +87,7 @@ const SellerDashboard = () => {
             [...predefinedMonths]
           );
           setOrderStats(aggregatedData);
-          setRevenue(0)
+          setRevenue(230000);
           setPercentage(10)
           setOrderPercentage(80)
           SetProductPercentage(76)

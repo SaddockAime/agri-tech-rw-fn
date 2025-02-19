@@ -336,7 +336,7 @@ const Header: React.FC = () => {
                     to="/shops"
                     className={({ isActive }) => (isActive ? "active" : "")}
                   >
-                    Shops
+                    Farms
                   </NavLink>
                 </li>
                 <li className="nav__item" onClick={handleSetIsMenuOpen}>

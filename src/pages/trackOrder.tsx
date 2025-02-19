@@ -158,6 +158,15 @@ const TrackOrder = () => {
               </span>
             </div>
           </li>
+          <li>
+            <div className="circle"></div>
+            <div>
+              <p>Expected Arrival Time</p>
+              <span>
+                {new Date(new Date(orderResponseData?.order.updatedAt).setDate(new Date(orderResponseData?.order.updatedAt).getDate() + 1)).toDateString()}
+              </span>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

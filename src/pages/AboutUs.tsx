@@ -147,8 +147,7 @@ export const AboutUs = () => {
               <div className="works__item">
                 <span className="works__item-number">4</span>
                 <p>
-                  Delivery is arranged either by the farmers, wholesalers, or
-                  third-party transporters.
+                  The AgriConnect Team arranges the delivery of the produce to the wholesalers.
                 </p>
               </div>
             </div>

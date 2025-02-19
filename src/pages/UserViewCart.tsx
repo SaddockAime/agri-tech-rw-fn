@@ -170,8 +170,8 @@ const UserViewCart: React.FC = () => {
       const profile: any = await dispatch(fetchUserProfile());
       const data = {
         successUrl:
-          "https://e-commerce-ninjas.netlify.app/shopping-cart?success",
-        cancelUrl: "https://e-commerce-ninjas.netlify.app/shopping-cart?cancel",
+          "http://localhost:5000/shopping-cart?success",
+        cancelUrl: "http://localhost:5000/shopping-cart?cancel",
         customerEmail: profile.payload.email,
         price: localStorage.getItem("stripePrice"),
       };
